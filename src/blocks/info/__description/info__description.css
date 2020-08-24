@@ -5,3 +5,12 @@
   line-height: 46px;
   margin: 0 0 30px;
 }
+
+@media all and (max-width: 767px) {
+  .info__description {
+    max-width: 288px;
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 16px;
+  }
+}

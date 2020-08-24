@@ -23,3 +23,10 @@
     max-width: 424px;
   }
 }
+
+@media all and (max-width: 500px) {
+  .about__container {
+    margin-top: 24px;
+    max-width: 288px;
+  }
+}

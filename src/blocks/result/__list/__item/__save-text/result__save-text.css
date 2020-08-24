@@ -28,3 +28,11 @@
     right: 54px;
   }
 }
+
+@media all and (max-width: 767px) {
+  .result__save-text {
+    width: 150px;
+    top: 16px;
+    right: 64px;
+  }
+}

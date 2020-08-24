@@ -1,6 +1,7 @@
 .result__key-word {
   margin: 0;
   position: absolute;
+  max-width: 88px;
   top: 24px;
   left: 24px;
   background-color: #ffffff;
@@ -15,5 +16,12 @@
   .result__key-word {
     top: 8px;
     right: 8px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .result__key-word {
+    top: 16px;
+    right: 16px;
   }
 }

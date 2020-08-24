@@ -21,3 +21,9 @@
     height: 420px;
   }
 }
+
+@media all and (max-width: 767px) {
+  .result__item {
+    height: 440px;
+  }
+}

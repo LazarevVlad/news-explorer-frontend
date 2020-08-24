@@ -27,3 +27,10 @@
     margin-top: 37px;
   }
 }
+
+@media all and (max-width: 767px) {
+  .result__button {
+    width: 288px;
+    margin-top: 15px;
+  }
+}

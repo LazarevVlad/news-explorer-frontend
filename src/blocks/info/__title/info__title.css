@@ -5,3 +5,10 @@
   color: rgba(26, 27, 34, 0.5);
   margin: 0 0 28px;
 }
+
+@media all and (max-width: 767px) {
+  .info__title {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+}

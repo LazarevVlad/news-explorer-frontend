@@ -1,3 +1,11 @@
+@import url(./_is-active/header__menu_is-active.css);
+
 .header__menu.header__menu_type_articles {
   min-width: 400px;
+}
+
+@media all and (max-width: 767px) {
+  .header__menu.header__menu_type_articles {
+    background: #ffffff;
+  }
 }

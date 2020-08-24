@@ -1,0 +1,22 @@
+@import url(./__auth/header__auth.css);
+@import url(./__exit/header__exit.css);
+@import url(./__link/header__link.css);
+
+.header__list-item {
+  list-style: none;
+}
+
+@media all and (max-width: 767px) {
+  .header__list-item {
+    margin-bottom: 22px;
+  }
+  .header__list-item:last-of-type {
+    margin-bottom: 16px;
+  }
+}
+
+@media all and (max-width: 321px) {
+  .header__list-item {
+    max-width: 288px;
+  }
+}

@@ -3,6 +3,7 @@
 .header__exit {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 112px;
   height: 48px;
   border-radius: 100px;
@@ -18,5 +19,12 @@
   .header__exit {
     width: 100px;
     height: 40px;
+  }
+}
+
+@media all and (max-width: 321px) {
+  .header__exit {
+    width: 288px;
+    height: 56px;
   }
 }

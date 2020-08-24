@@ -14,3 +14,9 @@
     height: 150px;
   }
 }
+
+@media all and (max-width: 767px) {
+  .result__image {
+    height: 196px;
+  }
+}

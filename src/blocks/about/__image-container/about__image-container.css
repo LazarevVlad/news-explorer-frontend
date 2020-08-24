@@ -22,3 +22,11 @@
     max-height: 232px;
   }
 }
+
+@media all and (max-width: 767px) {
+  .about__image-container {
+    margin: 0;
+    width: 272px;
+    max-height: 272px;
+  }
+}

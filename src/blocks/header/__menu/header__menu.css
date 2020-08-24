@@ -1,13 +1,9 @@
-@import url(./__auth/header__auth.css);
-@import url(./__exit/header__exit.css);
-@import url(./__link/header__link.css);
+@import url(./__list/header__list.css);
 @import url(./_type/_articles/header__menu_type_articles.css);
+@import url(./_is-active/header__menu_is-active.css);
 
 .header__menu {
   min-width: 600px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -24,7 +20,20 @@
 
 @media all and (max-width: 767px) {
   .header__menu {
-    /* display: none; */
-    flex-direction: column;
+    display: none;
+
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    background: #1a1b22;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .header__menu {
+    min-width: 150px;
   }
 }

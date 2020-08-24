@@ -1,0 +1,28 @@
+@import url(./__list-item/header__list-item.css);
+@import url(./__list-close/header__list-close.css);
+
+.header__list {
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media all and (max-width: 767px) {
+  .header__list {
+    /* display: none; */
+    flex-direction: column;
+    margin: 0;
+    margin-top: 66px;
+  }
+}
+@media all and (max-width: 321px) {
+  .header__list {
+    padding-right: 16px;
+    padding-left: 16px;
+    align-items: flex-start;
+  }
+}

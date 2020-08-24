@@ -9,3 +9,9 @@
     padding: 24px 40px 32px;
   }
 }
+
+@media all and (max-width: 767px) {
+  .page__info {
+    padding: 8px 16px 32px;
+  }
+}

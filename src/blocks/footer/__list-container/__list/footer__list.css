@@ -1,0 +1,9 @@
+@import url(./__list-link/footer__list-link.css);
+@import url(./_icon/footer__list_icon.css);
+@import url(./_text/footer__list_text.css);
+
+.footer__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
