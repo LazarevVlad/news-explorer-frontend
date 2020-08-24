@@ -10,7 +10,7 @@
       type="text/css"
       href="<%=htmlWebpackPlugin.files.css %>"
     />
-    <link rel="shortcut icon" href="<%=require('../images/N.png').default%>" >
+    <link rel="shortcut icon" href="<%=require('../images/N.png').default%>" />
     <title>NewsExplorer</title>
   </head>
   <body>
@@ -48,27 +48,26 @@
           <nav class="header__menu">
             <div class="header__list-close"></div>
             <ul class="header__list">
-
               <li class="header__list-item">
                 <a href="#main" class="header__link">Главная</a>
               </li>
               <li class="header__list-item">
                 <a href="./articles.html" class="header__link"
-                >Сохранённые статьи</a
+                  >Сохранённые статьи</a
                 >
               </li>
               <li class="header__list-item">
                 <button class="header__auth">Авторизоваться</button>
               </li>
               <li class="header__list-item">
-                <button class="header__exit">
+                <div class="header__exit">
                   <p class="header__exit-text">Выйти</p>
                   <img
                     src="<%=require('../images/logout_white.png').default%>"
                     alt=""
                     class="header__exit-image"
                   />
-                </button>
+                </div>
               </li>
             </ul>
           </nav>
@@ -93,17 +92,21 @@
       </div>
 
       <main class="content">
-
         <section class="circle page__circle">
           <i class="circle__preloader"></i>
           <p class="circle__text">Идет поиск новостей...</p>
         </section>
 
         <section class="not-found page__not-found">
-          <img alt="Грустная лупа" src="<%=require('../images/not-found_v1.svg').default%>" class="not-found__image">
+          <img
+            alt="Грустная лупа"
+            src="<%=require('../images/not-found_v1.svg').default%>"
+            class="not-found__image"
+          />
           <h2 class="not-found__title">Ничего не найдено</h2>
-          <p class="not-found__subtitle">К сожалению по вашему запросу
-            ничего не найдено.</p>
+          <p class="not-found__subtitle">
+            К сожалению по вашему запросу ничего не найдено.
+          </p>
         </section>
 
         <section class="result page__result">
@@ -155,13 +158,13 @@
         <section class="about page__about">
           <div class="about__image-container">
             <img
-            src="<%=require('../images/image-03.jpg').default%>"
-            alt="Автор"
-            class="about__image"
+              src="<%=require('../images/image-03.jpg').default%>"
+              alt="Автор"
+              class="about__image"
             />
           </div>
           <div class="about__container">
-            <h1 class="about__title">Об авторе</h1>
+            <h2 class="about__title">Об авторе</h2>
             <p class="about__description">
               Это блок с описанием автора проекта. Здесь следует указать, как
               вас зовут, чем вы занимаетесь, какими технологиями разработки
@@ -244,7 +247,12 @@
             <button type class="popup__button" disabled>
               Войти
             </button>
-            <p class="popup__option">или <span class="popup__option-text popup__option-text_signup">Зарегистрироваться</span></p>
+            <p class="popup__option">
+              или
+              <span class="popup__option-text popup__option-text_signup"
+                >Зарегистрироваться</span
+              >
+            </p>
           </form>
         </div>
       </div>
@@ -298,23 +306,33 @@
           <button type class="popup__button" disabled>
             Зарегистрироваться
           </button>
-          <p class="popup__option">или <span class="popup__option-text popup__option-text_signin">Войти</span></p>
+          <p class="popup__option">
+            или
+            <span class="popup__option-text popup__option-text_signin"
+              >Войти</span
+            >
+          </p>
         </form>
       </div>
     </div>
-  </div>
 
-  <div class="popup popup_result">
-    <div class="popup__content popup__content_type_result">
-      <img
-        src="<%=require('../images/back.svg').default%>"
-        alt="Закрыть"
-        class="popup__close"
-      />
-      <h3 class="popup__title popup__title_type_result">Пользователь успешно зарегистрирован!</h3>
-      <p class="popup__option popup__option_type_result"><span class="popup__option-text popup__option-text_result">Выполнить вход</span></p>
+    <div class="popup popup_result">
+      <div class="popup__content popup__content_type_result">
+        <img
+          src="<%=require('../images/back.svg').default%>"
+          alt="Закрыть"
+          class="popup__close"
+        />
+        <h3 class="popup__title popup__title_type_result">
+          Пользователь успешно зарегистрирован!
+        </h3>
+        <p class="popup__option popup__option_type_result">
+          <span class="popup__option-text popup__option-text_result"
+            >Выполнить вход</span
+          >
+        </p>
+      </div>
     </div>
-  </div>
     <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
   </body>
 </html>
