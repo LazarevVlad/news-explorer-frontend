@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,8 +46,9 @@
             </ul>
           </nav> -->
           <nav class="header__menu">
+            <div class="header__list-close"></div>
             <ul class="header__list">
-              <div class="header__list-close"></div>
+
               <li class="header__list-item">
                 <a href="#main" class="header__link">Главная</a>
               </li>
@@ -177,30 +178,34 @@
         <p class="footer__copyright">
           &COPY; 2020 Supersite, Powered by News API
         </p>
-        <ul class="footer__list">
-          <li class="footer__list-link">
-            <a href="#main" class="footer__link">Главная</a>
-          </li>
-          <li class="footer__list-link">
-            <a
-              href="https://praktikum.yandex.ru/"
-              class="footer__link"
-              target="blank"
-              >Яндекс.Практикум</a
-            >
-          </li>
-          <li class="footer__list-link">
-            <a
-              href="https://github.com/LazarevVlad"
-              class="footer__link"
-              target="blank"
-              ><img
-                src="<%=require('../images/github.svg').default%>"
-                alt=""
-                class="footer__link-image"
-            /></a>
-          </li>
-        </ul>
+        <nav class="footer__list-container">
+          <ul class="footer__list footer__list_text">
+            <li class="footer__list-link">
+              <a href="#main" class="footer__link">Главная</a>
+            </li>
+            <li class="footer__list-link">
+              <a
+                href="https://praktikum.yandex.ru/"
+                class="footer__link"
+                target="blank"
+                >Яндекс.Практикум</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__list footer__list_icon">
+            <li class="footer__list-link">
+              <a
+                href="https://github.com/LazarevVlad"
+                class="footer__link"
+                target="blank"
+                ><img
+                  src="<%=require('../images/github.svg').default%>"
+                  alt=""
+                  class="footer__link-image"
+              /></a>
+            </li>
+          </ul>
+        </nav>
       </footer>
 
       <div class="popup popup_signin">
@@ -310,7 +315,6 @@
       <p class="popup__option popup__option_type_result"><span class="popup__option-text popup__option-text_result">Выполнить вход</span></p>
     </div>
   </div>
-</div>
     <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
   </body>
 </html>
