@@ -3,7 +3,7 @@
 .footer__list-container {
   margin: 0;
   padding: 0;
-  max-width: 400px;
+  flex-basis: 400px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -11,10 +11,16 @@
   line-height: 24px;
 }
 
+@media all and (max-width: 1023px) {
+  .footer__list-container {
+    flex-basis: 288px;
+  }
+}
+
 @media all and (max-width: 767px) {
   .footer__list-container {
     margin: 0 auto;
-    max-width: 288px;
+    flex-basis: 288px;
     order: 1;
   }
 }
