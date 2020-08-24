@@ -1,0 +1,12 @@
+.header__menu-logo {
+  display: none;
+  background-image: url(../../../images/menu.svg);
+  width: 24px;
+  height: 24px;
+}
+
+@media all and (max-width: 767px) {
+  .header__menu-logo {
+    display: block;
+  }
+}

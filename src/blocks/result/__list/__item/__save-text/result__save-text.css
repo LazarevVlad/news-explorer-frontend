@@ -1,0 +1,30 @@
+@import url(./_type/_articles/result__save-text_type_articles.css);
+
+.result__save-text {
+  margin: 0;
+  position: absolute;
+  top: 24px;
+  right: 70px;
+  width: 182px;
+  height: 40px;
+  z-index: 10;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 10px;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+@media all and (max-width: 1023px) {
+  .result__save-text {
+    width: 150px;
+    top: 8px;
+    right: 54px;
+  }
+}

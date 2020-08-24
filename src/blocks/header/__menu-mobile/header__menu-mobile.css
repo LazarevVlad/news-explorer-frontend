@@ -1,0 +1,14 @@
+@import url(./__list/header__list.css);
+
+.header__menu-mobile {
+  display: none;
+  box-sizing: border-box;
+  padding-top: 56px;
+}
+
+@media all and (max-width: 767px) {
+  .header__menu-mobile {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

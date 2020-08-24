@@ -1,0 +1,14 @@
+@import url(./page/page__circle.css);
+@import url(./__preloader/circle__preloader.css);
+@import url(./__text/circle__text.css);
+
+.circle {
+  position: relative;
+  height: 282px;
+  background: #f5f6f7;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

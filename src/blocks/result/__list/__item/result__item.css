@@ -1,0 +1,23 @@
+@import url(./__item-button/result__item-button.css);
+@import url(./__save-text/result__save-text.css);
+@import url(./__key-word/result__key-word.css);
+@import url(./__image/result__image.css);
+@import url(./__date/result__date.css);
+@import url(./__item-title/result__item-title.css);
+@import url(./__item-text/result__item-text.css);
+@import url(./__source/result__source.css);
+
+.result__item {
+  width: 100%;
+  height: 576px;
+  background: #ffffff;
+  border-radius: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (max-width: 1023px) {
+  .result__item {
+    height: 420px;
+  }
+}

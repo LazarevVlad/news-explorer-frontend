@@ -1,0 +1,10 @@
+@import url(./__option-text/popup__option-text.css);
+@import url(./_type/_result/popup__option_type_result.css);
+
+.popup__option {
+  max-width: 226px;
+  margin: 16px auto 0;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}

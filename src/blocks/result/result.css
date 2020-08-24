@@ -1,0 +1,12 @@
+@import url(./page/page__result.css);
+@import url(./__title/result__title.css);
+@import url(./__list/result__list.css);
+@import url(./__button/result__button.css);
+
+.result {
+  color: #1a1b22;
+  background-color: #f5f6f7;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}

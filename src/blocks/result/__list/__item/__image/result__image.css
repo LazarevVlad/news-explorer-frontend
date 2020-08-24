@@ -1,0 +1,16 @@
+@import url(./_type/result__image_type_articles.css);
+
+.result__image {
+  background-image: url(../.././../../../images/image_08.jpg);
+  height: 272px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+@media all and (max-width: 1023px) {
+  .result__image {
+    height: 150px;
+  }
+}

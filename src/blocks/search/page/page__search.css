@@ -1,0 +1,15 @@
+.page__search {
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+
+@media all and (max-width: 1023px) {
+  .page__search {
+    padding: 38px 0 48px;
+  }
+}
+@media all and (max-width: 767px) {
+  .page__search {
+    padding: 30px 0 32px;
+  }
+}

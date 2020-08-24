@@ -1,0 +1,24 @@
+@import url(./__image/about__image.css);
+
+.about__image-container {
+  margin: 0;
+  width: 464px;
+  max-height: 464px;
+  margin-right: 56px;
+}
+
+@media all and (max-width: 1279px) {
+  .about__image-container {
+    width: 348px;
+    max-height: 348px;
+    margin-right: 40px;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .about__image-container {
+    margin-top: 32px;
+    width: 232px;
+    max-height: 232px;
+  }
+}

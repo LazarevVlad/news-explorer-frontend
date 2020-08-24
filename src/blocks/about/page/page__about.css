@@ -1,0 +1,16 @@
+.page__about {
+  box-sizing: border-box;
+  padding: 80px 216px 0 104px;
+}
+
+@media all and (max-width: 1280px) {
+  .page__about {
+    padding-right: 104px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .page__about {
+    padding: 40px 40px 72px;
+  }
+}

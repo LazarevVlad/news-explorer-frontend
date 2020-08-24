@@ -1,0 +1,9 @@
+.popup_signin.popup_is-opened {
+  display: flex;
+}
+.popup_signup.popup_is-opened {
+  display: flex;
+}
+.popup_result.popup_is-opened {
+  display: flex;
+}

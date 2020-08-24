@@ -1,0 +1,6 @@
+@import url(./__input-container/popup__input-container.css);
+@import url(./__option/popup__option.css);
+
+.popup__form {
+  margin: 0;
+}

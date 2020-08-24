@@ -1,0 +1,25 @@
+@import url(./__title/about__title.css);
+@import url(./__description/about__description.css);
+
+.about__container {
+  margin-top: 51px;
+  max-width: 600px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: #1a1b22;
+}
+
+@media all and (max-width: 1279px) {
+  .about__container {
+    margin-top: 41px;
+    max-width: 500px;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .about__container {
+    margin: 0;
+    max-width: 424px;
+  }
+}

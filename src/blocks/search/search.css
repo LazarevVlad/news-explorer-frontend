@@ -1,0 +1,9 @@
+@import url(./__container/search__container.css);
+@import url(./page/page__search.css);
+
+.search {
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}

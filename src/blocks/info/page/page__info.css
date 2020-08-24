@@ -1,0 +1,11 @@
+.page__info {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 40px 104px 56px;
+}
+
+@media all and (max-width: 1023px) {
+  .page__info {
+    padding: 24px 40px 32px;
+  }
+}

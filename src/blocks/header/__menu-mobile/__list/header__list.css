@@ -1,0 +1,39 @@
+.header__list {
+  list-style: none;
+  display: flex;
+}
+
+.header__list > li > a {
+  display: block;
+}
+
+#mobile + label {
+  display: none;
+  position: relative;
+  color: #fff;
+  height: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+#mobile + label:before {
+  content: '\f0c9';
+  display: inline-block;
+  font-family: 'FontAwesome';
+  font-size: 22px;
+}
+#mobile:checked + label:before {
+  content: '\f00d';
+  color: #f00;
+}
+
+@media screen and (max-width: 767px) {
+  #mobile + label {
+    display: inline-block;
+  }
+  #mobile + label + .header__list {
+    display: none;
+  }
+  #mobile:checked + label + .header__list {
+    display: block;
+  }
+}

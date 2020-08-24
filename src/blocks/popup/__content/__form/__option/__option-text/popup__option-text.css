@@ -1,0 +1,6 @@
+@import url(./_result/popup__option-text_result.css);
+
+.popup__option-text {
+  color: #2f71e5;
+  cursor: pointer;
+}

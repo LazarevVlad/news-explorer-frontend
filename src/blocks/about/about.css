@@ -1,0 +1,15 @@
+@import url(./page/page__about.css);
+@import url(./__image-container/about__image-container.css);
+@import url(./__container/about__container.css);
+
+.about {
+  display: flex;
+  justify-content: flex-start;
+  background: #ffffff;
+}
+
+/* @media all and (max-width: 1023px) {
+  .about {
+    justify-content: flex-start;
+  }
+} */

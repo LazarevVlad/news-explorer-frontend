@@ -1,0 +1,15 @@
+@import url(./page/page__not-found.css);
+@import url(./__image/not-found__image.css);
+@import url(./__title/not-found__title.css);
+@import url(./__subtitle/not-found__subtitle.css);
+
+.not-found {
+  background: #f5f6f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
