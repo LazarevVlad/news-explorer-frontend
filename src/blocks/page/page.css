@@ -2,3 +2,10 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+
+@media all and (max-width: 1439px) {
+  .page {
+    width: 100%;
+    min-width: 280px;
+  }
+}
