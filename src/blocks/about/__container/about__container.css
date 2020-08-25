@@ -4,7 +4,7 @@
 .about__container {
   margin-top: 51px;
   max-width: 600px;
-  font-family: Roboto;
+  font-family: 'Roboto', 'Inter', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   color: #1a1b22;

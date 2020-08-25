@@ -6,6 +6,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  /* white-space: nowrap; */
 }
 
 @media all and (max-width: 1023px) {
@@ -13,12 +14,21 @@
     height: 88px;
     max-width: 192px;
     margin-top: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
-@media all and (max-width: 1023px) {
+@media all and (max-width: 767px) {
   .result__item-text {
     max-width: 256px;
+  }
+}
+@media all and (max-width: 319px) {
+  .result__item-text {
+    max-width: 192px;
   }
 }

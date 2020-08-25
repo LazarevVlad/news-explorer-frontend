@@ -18,10 +18,15 @@
   }
 }
 
-@media all and (max-width: 1023px) {
+@media all and (max-width: 767px) {
   .result__source {
     max-width: 256px;
     margin-top: 8px;
     margin-bottom: 16px;
+  }
+}
+@media all and (max-width: 319px) {
+  .result__source {
+    max-width: 192px;
   }
 }

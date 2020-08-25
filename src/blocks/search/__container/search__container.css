@@ -18,3 +18,8 @@
     max-width: 288px;
   }
 }
+@media all and (max-width: 319px) {
+  .search__container {
+    max-width: 280px;
+  }
+}

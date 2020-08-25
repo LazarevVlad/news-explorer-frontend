@@ -27,3 +27,9 @@
     height: 440px;
   }
 }
+
+@media all and (max-width: 319px) {
+  .result__item {
+    height: 420px;
+  }
+}

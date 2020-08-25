@@ -19,8 +19,15 @@
 
 @media all and (max-width: 767px) {
   .footer__list-container {
-    margin: 0 auto;
-    flex-basis: 288px;
+    max-width: 288px;
+    /* margin: 0 auto; */
+    flex-basis: 0;
     order: 1;
+  }
+}
+
+@media all and (max-width: 319px) {
+  .footer__list-container {
+    max-width: 280px;
   }
 }

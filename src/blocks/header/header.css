@@ -15,7 +15,7 @@
   color: #ffffff;
   border-bottom: rgba(196, 196, 196, 0.01);
   box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
-  font-family: Roboto;
+  font-family: 'Roboto', 'Inter', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 500;
 }

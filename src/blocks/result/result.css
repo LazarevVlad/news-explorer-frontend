@@ -6,7 +6,7 @@
 .result {
   color: #1a1b22;
   background-color: #f5f6f7;
-  font-family: Roboto;
+  font-family: 'Roboto', 'Inter', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
 }

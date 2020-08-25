@@ -21,3 +21,9 @@
     margin-top: 10px;
   }
 }
+
+@media all and (max-width: 319px) {
+  .result__item-title {
+    max-width: 192px;
+  }
+}

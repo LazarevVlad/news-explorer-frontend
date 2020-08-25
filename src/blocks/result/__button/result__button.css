@@ -34,3 +34,8 @@
     margin-top: 15px;
   }
 }
+@media all and (max-width: 319px) {
+  .result__button {
+    width: 240px;
+  }
+}
