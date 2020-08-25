@@ -23,3 +23,9 @@
     height: 56px;
   }
 }
+
+@media all and (max-width: 305px) {
+  .header__auth {
+    width: 260px;
+  }
+}

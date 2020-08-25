@@ -15,4 +15,17 @@
   font-family: 'Inter', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
+  z-index: 300;
+}
+
+@media all and (max-width: 431px) {
+  .popup__content {
+    width: 320px;
+  }
+}
+
+@media all and (max-width: 321px) {
+  .popup__content {
+    width: 280px;
+  }
 }

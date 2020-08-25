@@ -26,3 +26,9 @@
     align-items: flex-start;
   }
 }
+@media all and (max-width: 305px) {
+  .header__list {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+}

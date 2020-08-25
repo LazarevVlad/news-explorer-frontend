@@ -28,3 +28,8 @@
     height: 56px;
   }
 }
+@media all and (max-width: 305px) {
+  .header__exit {
+    width: 260px;
+  }
+}
