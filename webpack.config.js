@@ -80,6 +80,7 @@ module.exports = {
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
+      // eslint-disable-next-line global-require
       cssProcessor: require('cssnano'),
       cssProcessorPluginOptions: {
         preset: ['default'],
