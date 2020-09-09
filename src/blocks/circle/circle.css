@@ -1,6 +1,7 @@
 @import url(./page/page__circle.css);
 @import url(./__preloader/circle__preloader.css);
 @import url(./__text/circle__text.css);
+@import url(./_invisible/circle_invisible.css);
 
 .circle {
   position: relative;

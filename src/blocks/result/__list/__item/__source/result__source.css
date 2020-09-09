@@ -1,6 +1,10 @@
 .result__source {
   max-width: 352px;
-  margin: 18px auto 24px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  margin: 0;
+  margin-top: 18px;
   font-family: Roboto Slab;
   font-weight: bold;
   font-size: 16px;
@@ -14,7 +18,8 @@
   .result__source {
     max-width: 192px;
     margin-top: 10px;
-    margin-bottom: 16px;
+    bottom: 16px;
+    left: 16px;
   }
 }
 
@@ -22,7 +27,6 @@
   .result__source {
     max-width: 256px;
     margin-top: 8px;
-    margin-bottom: 16px;
   }
 }
 @media all and (max-width: 319px) {

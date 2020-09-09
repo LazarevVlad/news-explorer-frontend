@@ -1,5 +1,11 @@
 .result__item-title {
   max-width: 352px;
+  max-height: 90px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 12px auto 0;
   font-family: Roboto Slab;
   font-size: 26px;

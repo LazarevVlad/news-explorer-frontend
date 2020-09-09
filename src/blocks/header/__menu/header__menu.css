@@ -3,7 +3,7 @@
 @import url(./_is-active/header__menu_is-active.css);
 
 .header__menu {
-  min-width: 600px;
+  min-width: 400px;
   font-family: 'Roboto', 'Inter', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -13,7 +13,7 @@
 
 @media all and (max-width: 1023px) {
   .header__menu {
-    min-width: 500px;
+    /* min-width: 00px; */
     font-size: 16px;
   }
 }
@@ -26,7 +26,7 @@
     top: 0;
     z-index: 5;
     width: 100%;
-    background: #1a1b22;
+    background: rgba(26, 27, 34, 1);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
   }

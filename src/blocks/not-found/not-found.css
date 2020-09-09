@@ -2,6 +2,7 @@
 @import url(./__image/not-found__image.css);
 @import url(./__title/not-found__title.css);
 @import url(./__subtitle/not-found__subtitle.css);
+@import url(./_invisible/not-found_invisible.css);
 
 .not-found {
   background: #f5f6f7;
