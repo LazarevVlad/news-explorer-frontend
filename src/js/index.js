@@ -120,3 +120,7 @@ searchForm.addEventListener('submit', (event) => {
   newsCardList.renderResult(keyWord.value);
 });
 //
+
+//
+console.log(header.checkAuth());
+//

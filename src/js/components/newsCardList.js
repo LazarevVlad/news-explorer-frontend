@@ -1,11 +1,10 @@
-/* eslint-disable no-restricted-syntax */
 export default class NewsCardList {
   constructor(container, creatNewCard, api, error, preloader) {
     this.api = api;
     this.creatNewCard = creatNewCard;
     this.container = container;
     this.list = this.container.querySelector('.result__list');
-    this.button = document.querySelector('.result__button');
+    this.button = this.container.querySelector('.result__button');
     this.articles = undefined;
     this.error = error;
     this.preloader = preloader;
@@ -21,6 +20,14 @@ export default class NewsCardList {
         if (res.articles.length === 0) {
           this.renderError();
         } else {
+          const items = this.list.querySelectorAll('.result__item');
+          console.log(items);
+          if (items.length !== 0) {
+            items.forEach((item) => {
+              this.list.removeChild(item);
+            });
+          }
+
           this.container.classList.remove('result_invisible');
           this.articles = res.articles;
           this.addCard(keyword);
@@ -29,7 +36,7 @@ export default class NewsCardList {
       .catch((err) => {
         this.renderLoader();
         this.renderError();
-        console.log(err);
+        console.log(`Ошибка: ${err}`);
       });
   }
 

@@ -1,4 +1,5 @@
 @import url(./_type/_articles/result__save-text_type_articles.css);
+@import url(./_invisible/result__save-text_invisible.css);
 
 .result__save-text {
   margin: 0;

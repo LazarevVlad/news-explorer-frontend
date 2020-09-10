@@ -15,9 +15,9 @@
   cursor: pointer;
 }
 
-.result__item-button:hover {
+/* .result__item-button:hover {
   background: url(../../../../../images/save_icon_hover.png);
-}
+} */
 
 @media all and (max-width: 1023px) {
   .result__item-button {

@@ -48,7 +48,7 @@ export default class Header {
   logOut() {
     this.api
       .logOut()
-      .then((res) => {
+      .then(() => {
         this.render({
           isLoggedIn: false,
         });
