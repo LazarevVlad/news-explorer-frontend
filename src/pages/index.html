@@ -19,32 +19,7 @@
         <header class="header page__header" id="main">
           <h1 class="header__logo">NewsExplorer</h1>
           <div class="header__menu-logo"></div>
-          <!-- <nav class="header__menu-mobile">
-            <input type="checkbox" id="mobile">
-            <label for="mobile"></label>
-            <ul class="header__list">
-              <li>
-                <a href="#main" class="header__link">Главная</a>
-              </li>
-              <li>
-                <a href="./articles.html" class="header__link"
-                >Сохранённые статьи</a>
-              </li>
-              <li>
-                <button class="header__auth">Авторизоваться</button>
-              </li>
-              <li>
-                <button class="header__exit">
-                  <p class="header__exit-text">Выйти</p>
-                  <img
-                  src="<%=require('../images/logout_white.png').default%>"
-                  alt=""
-                  class="header__exit-image"
-                  />
-                </button>
-              </li>
-            </ul>
-          </nav> -->
+
           <nav class="header__menu">
             <div class="header__list-close"></div>
             <ul class="header__list">
@@ -119,66 +94,14 @@
 
         <section class="result page__result result_invisible">
           <h2 class="result__title">Результаты поиска</h2>
-          <div class="result__list">
-            <!-- <div class="result__item">
-              <button class="result__item-button"></button>
-              <img
-                alt="Иллюстрация"
-                src="<%=require('../images/image_08.jpg').default%>"
-                class="result__image"
-              />
-              <p class="result__date">2 августа, 2019</p>
-              <h3 class="result__item-title">Национальное достояние – парки</h3>
-              <p class="result__item-text">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складываться система национальных парков – охраняемых
-                территорий, где и сегодня каждый может приобщиться к природе.
-              </p>
-              <p class="result__source">Лента.ру</p>
-            </div>
-
-            <div class="result__item">
-              <button class="result__item-button"></button>
-              <p class="result__save-text">Войдите, чтобы сохранять статьи</p>
-              <img
-                alt="Иллюстрация"
-                src="<%=require('../images/image_08.jpg').default%>"
-                class="result__image"
-              />
-              <p class="result__date">2 августа, 2019</p>
-              <h3 class="result__item-title">Национальное достояние – парки</h3>
-              <p class="result__item-text">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складываться система национальных парков – охраняемых
-                территорий, где и сегодня каждый может приобщиться к природе.
-              </p>
-              <p class="result__source">Лента.ру</p>
-            </div>
-
-            <div class="result__item">
-              <button class="result__item-button"></button>
-              <img
-                alt="Иллюстрация"
-                src="<%=require('../images/image_08.jpg').default%>"
-                class="result__image"
-              />
-              <p class="result__date">2 августа, 2019</p>
-              <h3 class="result__item-title">Национальное достояние – парки</h3>
-              <p class="result__item-text">
-                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-                начала складываться система национальных парков – охраняемых
-                территорий, где и сегодня каждый может приобщиться к природе.
-              </p>
-              <p class="result__source">Лента.ру</p>
-            </div> -->
-          </div>
+          <div class="result__list"></div>
           <button class="result__button">Показать ещё</button>
         </section>
 
         <section class="about page__about">
           <div class="about__image-container">
             <img
-              src="<%=require('../images/image-03.jpg').default%>"
+              src="<%=require('../images/myimg.jpg').default%>"
               alt="Автор"
               class="about__image"
             />
@@ -186,13 +109,12 @@
           <div class="about__container">
             <h2 class="about__title">Об авторе</h2>
             <p class="about__description">
-              Это блок с описанием автора проекта. Здесь следует указать, как
-              вас зовут, чем вы занимаетесь, какими технологиями разработки
-              владеете.
+              Привет, меня зовут Владислав. Я начинающий фронтенд-разработчик, и
+              это мой дипломный проект.
             </p>
             <p class="about__description">
-              Также можно рассказать о процессе обучения в Практикуме, чему вы
-              тут научились, и чем можете помочь потенциальным заказчикам.
+              Данный сервис предназначен для поиска новостей по ключевым словам
+              и добавлением в личный кабинет.
             </p>
           </div>
         </section>
@@ -244,27 +166,36 @@
               <label class="popup__label" for="email-signin">Email</label>
               <input
                 id="email-signin"
-                type="text"
+                type="email"
                 name="emailSignin"
                 class="popup__input popup__input_type_email"
                 placeholder="Введите почту"
                 required
               />
-              <span id="error-email" class="error-message"></span>
+              <span id="error-email-signin" class="error-message"></span>
             </div>
             <div class="popup__input-container">
               <label class="popup__label" for="password-signin">Password</label>
               <input
                 id="password-signin"
-                type="text"
+                type="password"
                 name="passwordSignin"
                 class="popup__input popup__input_type_password"
                 placeholder="Введите пароль"
                 required
               />
-              <span id="error-password" class="error-message"></span>
+              <span id="error-password-signin" class="error-message"></span>
             </div>
-            <button type="submit" class="popup__button">Войти</button>
+            <div class="popup__button-container">
+              <span id="submit" class="error-message"></span>
+              <button
+                type="submit"
+                class="popup__button popup__button_signin"
+                disabled
+              >
+                Войти
+              </button>
+            </div>
             <p class="popup__option">
               или
               <span class="popup__option-text popup__option-text_signup"
@@ -289,7 +220,7 @@
             <label class="popup__label" for="email-signup">Email</label>
             <input
               id="email-signup"
-              type="text"
+              type="email"
               name="emailSignup"
               class="popup__input popup__input_type_email"
               placeholder="Введите почту"
@@ -301,7 +232,7 @@
             <label class="popup__label" for="password-signup">Password</label>
             <input
               id="password-signup"
-              type="text"
+              type="password"
               name="passwordSignup"
               class="popup__input popup__input_type_password"
               placeholder="Введите пароль"
@@ -310,20 +241,29 @@
             <span id="error-password-signup" class="error-message"></span>
           </div>
           <div class="popup__input-container">
-            <label class="popup__label" for="name-signup">Имя</label>
+            <label class="popup__label" for="name">Имя</label>
             <input
-              id="name-signup"
+              id="name"
               type="text"
               name="name"
               class="popup__input popup__input_type_name"
               placeholder="Введите своё имя"
+              minlength="2"
+              maxlength="30"
               required
             />
             <span id="error-name" class="error-message"></span>
           </div>
-          <button type="submit" class="popup__button">
-            Зарегистрироваться
-          </button>
+          <div class="popup__button-container">
+            <span id="submit" class="error-message"></span>
+            <button
+              type="submit"
+              class="popup__button popup__button_signup"
+              disabled
+            >
+              Зарегистрироваться
+            </button>
+          </div>
           <p class="popup__option">
             или
             <span class="popup__option-text popup__option-text_signin"

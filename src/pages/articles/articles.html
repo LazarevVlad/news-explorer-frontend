@@ -10,7 +10,12 @@
       type="text/css"
       href="<%=htmlWebpackPlugin.files.css %>"
     />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="<%=require('../../images/N.png').default%>"
+    />
+
+    <title>Сохранённые статьи</title>
   </head>
   <body class="page">
     <header class="header page__header header_type_articles" id="articles">
@@ -31,9 +36,15 @@
               >Сохранённые статьи</a
             >
           </li>
-          <li class="header__list-item">
+          <li
+            class="header__list-item header__list-item_is-disabled"
+            id="loginBtn"
+          >
+            <button class="header__auth">Авторизоваться</button>
+          </li>
+          <li class="header__list-item" id="logoutBtn">
             <div class="header__exit header__exit_type_articles">
-              <p class="header__exit-text">Выйти</p>
+              <p class="header__exit-text"></p>
               <img
                 src="<%=require('../../images/logout.png').default%>"
                 alt="Закрыть"
@@ -63,118 +74,15 @@
     <main class="content">
       <section class="info page__info">
         <h2 class="info__title">Сохранённые статьи</h2>
-        <p class="info__description">Грета, у вас 5 сохранённых статей</p>
+        <p class="info__description"></p>
         <p class="info__key-words">
           По ключевым словам:
-          <span class="info__key-word">Природа, Тайга и 2 другим</span>
+          <span class="info__key-word"></span>
         </p>
       </section>
 
       <section class="result page__result">
-        <div class="result__list">
-          <div class="result__item">
-            <button
-              class="result__item-button result__item-button_type_articles"
-            ></button>
-            <p class="result__key-word">Природа</p>
-            <img
-              alt="Иллюстрация"
-              src="<%=require('../../images/image_06.png').default%>"
-              class="result__image result__image_type_articles"
-            />
-            <p class="result__date">2 августа, 2019</p>
-            <h3 class="result__item-title">Национальное достояние – парки</h3>
-            <p class="result__item-text">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="result__source">Лента.ру</p>
-          </div>
-
-          <div class="result__item">
-            <button
-              class="result__item-button result__item-button_type_articles"
-            ></button>
-            <p class="result__key-word">Природа</p>
-            <p class="result__save-text result__save-text_type_articles">
-              Убрать из сохранённых
-            </p>
-            <img
-              alt="Иллюстрация"
-              src="<%=require('../../images/image_06.png').default%>"
-              class="result__image result__image_type_articles"
-            />
-            <p class="result__date">2 августа, 2019</p>
-            <h3 class="result__item-title">Национальное достояние – парки</h3>
-            <p class="result__item-text">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="result__source">Лента.ру</p>
-          </div>
-
-          <div class="result__item">
-            <button
-              class="result__item-button result__item-button_type_articles"
-            ></button>
-            <p class="result__key-word">Природа</p>
-            <img
-              alt="Иллюстрация"
-              src="<%=require('../../images/image_06.png').default%>"
-              class="result__image result__image_type_articles"
-            />
-            <p class="result__date">2 августа, 2019</p>
-            <h3 class="result__item-title">Национальное достояние – парки</h3>
-            <p class="result__item-text">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="result__source">Лента.ру</p>
-          </div>
-
-          <div class="result__item">
-            <button
-              class="result__item-button result__item-button_type_articles"
-            ></button>
-            <p class="result__key-word">Природа</p>
-            <img
-              alt="Иллюстрация"
-              src="<%=require('../../images/image_06.png').default%>"
-              class="result__image result__image_type_articles"
-            />
-            <p class="result__date">2 августа, 2019</p>
-            <h3 class="result__item-title">Национальное достояние – парки</h3>
-            <p class="result__item-text">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="result__source">Лента.ру</p>
-          </div>
-
-          <div class="result__item">
-            <button
-              class="result__item-button result__item-button_type_articles"
-            ></button>
-            <p class="result__key-word">Природа</p>
-            <img
-              alt="Иллюстрация"
-              src="<%=require('../../images/image_06.png').default%>"
-              class="result__image result__image_type_articles"
-            />
-            <p class="result__date">2 августа, 2019</p>
-            <h3 class="result__item-title">Национальное достояние – парки</h3>
-            <p class="result__item-text">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <p class="result__source">Лента.ру</p>
-          </div>
-        </div>
+        <div class="result__list"></div>
       </section>
     </main>
     <footer class="footer page__footer">
