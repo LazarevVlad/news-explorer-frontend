@@ -1,8 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 export default class MainApi {
-  constructor() {
-    // this.option = option;
-    this.url = 'http://localhost:3000';
+  constructor(url) {
+    this.url = url;
   }
 
   static _getResponseData(res) {
@@ -74,7 +73,7 @@ export default class MainApi {
   }
 
   getArticles() {
-    return fetch(`${this.url}/articles`, {
+    return fetch(`${this.url}/articles/`, {
       method: 'GET',
       credentials: 'include',
       headers: {
@@ -85,7 +84,7 @@ export default class MainApi {
       .catch((err) => MainApi._getError(err));
   }
 
-  createArticles(keyword, title, text, date, source, link) {
+  createArticles(keyword, title, text, date, source, link, image) {
     return fetch(`${this.url}/articles`, {
       method: 'POST',
       credentials: 'include',
@@ -99,6 +98,7 @@ export default class MainApi {
         date,
         source,
         link,
+        image,
       }),
     })
       .then((res) => MainApi._getResponseData(res))

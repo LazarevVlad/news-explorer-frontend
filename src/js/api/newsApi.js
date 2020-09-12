@@ -3,10 +3,9 @@
 import dateform from '../utils/dateForRequest';
 
 export default class NewsApi {
-  constructor() {
-    // this.options = options;
-    this.baseUrl = 'http://newsapi.org/v2/everything?';
-    this.key = 'da16eee876a84da689fb591539326b29';
+  constructor(url, key) {
+    this.url = url;
+    this.key = key;
     this.pageSize = 100;
   }
 
@@ -23,7 +22,7 @@ export default class NewsApi {
 
   getNews(keyWord) {
     return fetch(
-      `${this.baseUrl}q=${keyWord}&from=${dateform().dateFrom}&to=${
+      `${this.url}q=${keyWord}&from=${dateform().dateFrom}&to=${
         dateform().dateTo
       }&pageSize=${this.pageSize}&apiKey=${this.key}`,
     )
