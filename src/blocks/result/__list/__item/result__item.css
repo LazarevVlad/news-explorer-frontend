@@ -6,6 +6,7 @@
 @import url(./__item-title/result__item-title.css);
 @import url(./__item-text/result__item-text.css);
 @import url(./__source/result__source.css);
+@import url(./__link/result__link.css);
 
 .result__item {
   width: 100%;

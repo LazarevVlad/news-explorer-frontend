@@ -1,0 +1,24 @@
+.error-message {
+  color: #ff3333;
+  font-size: 0.8em;
+  transition: 0.3s;
+  padding: 0px;
+  opacity: 0;
+}
+
+.popup__input-container__invalid .error-message {
+  padding: 10px;
+  opacity: 1;
+}
+
+.popup__input-container__invalid .input__text {
+  border-color: #ff3333;
+}
+
+.popup__button_error {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  opacity: 1;
+  border-color: #ff3333;
+}

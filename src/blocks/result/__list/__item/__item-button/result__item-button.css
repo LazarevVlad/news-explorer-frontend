@@ -1,5 +1,6 @@
 @import url(./_is-active/result__item-icon_is-active.css);
 @import url(./_type/_articles/result__item-button_type_articles.css);
+@import url(./_hover/result__item-button_hover.css);
 
 .result__item-button {
   background-color: #ffffff;
@@ -14,10 +15,6 @@
   border: none;
   cursor: pointer;
 }
-
-/* .result__item-button:hover {
-  background: url(../../../../../images/save_icon_hover.png);
-} */
 
 @media all and (max-width: 1023px) {
   .result__item-button {
