@@ -1,5 +1,6 @@
+/* eslint-disable no-console */
 export default class NewsCardList {
-  constructor(container, creatNewCard, api, error, preloader) {
+  constructor(container, creatNewCard, api, error, preloader, keyword) {
     this.api = api;
     this.creatNewCard = creatNewCard;
     this.container = container;
@@ -8,20 +9,20 @@ export default class NewsCardList {
     this.articles = undefined;
     this.error = error;
     this.preloader = preloader;
+    this.keyword = keyword;
     this.showMore();
   }
 
-  renderResult(keyword) {
+  renderResult() {
     this.renderLoader();
     this.api
-      .getNews(keyword)
+      .getNews(this.keyword)
       .then((res) => {
         this.renderLoader();
         if (res.articles.length === 0) {
           this.renderError();
         } else {
           const items = this.list.querySelectorAll('.result__item');
-          console.log(items);
           if (items.length !== 0) {
             items.forEach((item) => {
               this.list.removeChild(item);
@@ -30,7 +31,7 @@ export default class NewsCardList {
 
           this.container.classList.remove('result_invisible');
           this.articles = res.articles;
-          this.addCard(keyword);
+          this.addCard(this.keyword);
         }
       })
       .catch((err) => {
@@ -40,17 +41,25 @@ export default class NewsCardList {
       });
   }
 
-  addCard(keyword) {
+  addCard() {
     if (this.articles.length > 3) {
       for (let i = 0; i < 3; i += 1) {
-        const templ = this.creatNewCard(this.articles[i], this.api, keyword);
+        const templ = this.creatNewCard(
+          this.articles[i],
+          this.api,
+          this.keyword,
+        );
         this.list.appendChild(templ);
       }
       this.articles = this.articles.slice(3);
     } else {
       this.button.classList.add('result__button_invisible');
-      for (let i = 0; i < 3; i += 1) {
-        const templ = this.creatNewCard(this.articles[i], this.api, keyword);
+      for (let i = 0; this.articles.length < 3; i += 1) {
+        const templ = this.creatNewCard(
+          this.articles[i],
+          this.api,
+          this.keyword,
+        );
         this.list.appendChild(templ);
       }
     }
