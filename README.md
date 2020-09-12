@@ -16,5 +16,4 @@
 ## Сборка
 
 - npm run dev - для разработки;
-- npm run build - создает сборку в папке dist;
-- npm run start - для запуска сборки из папки dist;
+- npm run start - создает сборку в папке dist;
