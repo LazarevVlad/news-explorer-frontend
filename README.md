@@ -18,10 +18,10 @@
 ## Установка
 
 - Склонируте репозиторий
-  <git clone https://github.com/LazarevVlad/news-explorer-frontend.git>
+  `git clone https://github.com/LazarevVlad/news-explorer-frontend.git`
 - Установите зависимости
-  <npm install>
+  `npm install`
 - Для разработки
-  <npm run dev>
+  `npm run dev`
 - Для создания сборки в папке dist
-  <npm run start>
+  `npm run start`
