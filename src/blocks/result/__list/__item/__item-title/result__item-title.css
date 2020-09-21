@@ -1,0 +1,35 @@
+.result__item-title {
+  max-width: 352px;
+  max-height: 90px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 12px auto 0;
+  font-family: Roboto Slab;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+@media all and (max-width: 1023px) {
+  .result__item-title {
+    max-width: 192px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .result__item-title {
+    max-width: 256px;
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 319px) {
+  .result__item-title {
+    max-width: 192px;
+  }
+}

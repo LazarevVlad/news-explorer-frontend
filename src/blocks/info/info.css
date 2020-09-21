@@ -1,0 +1,12 @@
+@import url(./page/page__info.css);
+@import url(./__title/info__title.css);
+@import url(./__description/info__description.css);
+@import url(./__key-words/info__key-words.css);
+
+.info {
+  background: #ffffff;
+  font-family: 'Roboto', 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #1a1b22;
+}

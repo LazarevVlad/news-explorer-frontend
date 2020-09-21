@@ -1,0 +1,15 @@
+@import url(./_type/articles/header__menu-logo_type_articles.css);
+
+.header__menu-logo {
+  display: none;
+  background-image: url(../../../images/menu.svg);
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+@media all and (max-width: 767px) {
+  .header__menu-logo {
+    display: block;
+  }
+}

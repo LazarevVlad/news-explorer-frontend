@@ -1,0 +1,6 @@
+.result__item-button.result__item-button_type_articles {
+  background-image: url(../../../../../../../images/trash_icon.png);
+}
+.result__item-button.result__item-button_type_articles:hover {
+  background-image: url(../../../../../../../images/trash_icon_hover.png);
+}

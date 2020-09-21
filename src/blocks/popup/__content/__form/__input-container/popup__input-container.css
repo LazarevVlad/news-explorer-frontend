@@ -1,0 +1,14 @@
+@import url(./__input/popup__input.css);
+@import url(./error-message/error-message.css);
+@import url(./__button/popup__button.css);
+@import url(./__label/popup__label.css);
+
+.popup__input-container {
+  height: 62px;
+  margin-bottom: 31px;
+}
+
+.popup__input-container:last-of-type {
+  margin-bottom: 0;
+}
+

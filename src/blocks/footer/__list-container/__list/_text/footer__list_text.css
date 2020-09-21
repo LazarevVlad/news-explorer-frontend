@@ -1,0 +1,13 @@
+.footer__list_text {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 767px) {
+  .footer__list_text {
+    width: 200px;
+    height: 72px;
+    flex-direction: column;
+  }
+}

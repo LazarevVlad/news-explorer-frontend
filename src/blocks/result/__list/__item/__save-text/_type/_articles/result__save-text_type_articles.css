@@ -1,0 +1,9 @@
+.result__save-text.result__save-text_type_articles {
+  width: 159px;
+}
+
+@media all and (max-width: 767px) {
+  .result__save-text.result__save-text_type_articles {
+    display: none;
+  }
+}

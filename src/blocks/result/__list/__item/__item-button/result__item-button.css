@@ -1,0 +1,31 @@
+@import url(./_is-active/result__item-icon_is-active.css);
+@import url(./_type/_articles/result__item-button_type_articles.css);
+@import url(./_hover/result__item-button_hover.css);
+
+.result__item-button {
+  background-color: #ffffff;
+  background: url(../../../../../images/save_icon.png);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1023px) {
+  .result__item-button {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .result__item-button {
+    top: 16px;
+    right: 16px;
+  }
+}

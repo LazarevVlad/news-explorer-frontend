@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Лазарев Владислав" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="<%=htmlWebpackPlugin.files.css %>"
+    />
+    <link rel="shortcut icon" href="<%=require('../images/N.png').default%>" />
+    <title>NewsExplorer</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="background">
+        <header class="header page__header" id="main">
+          <h1 class="header__logo">NewsExplorer</h1>
+          <div class="header__menu-logo"></div>
+
+          <nav class="header__menu">
+            <div class="header__list-close"></div>
+            <ul class="header__list">
+              <li class="header__list-item" id="mainLink">
+                <a href="#main" class="header__link">Главная</a>
+              </li>
+              <li
+                class="header__list-item header__list-item_is-disabled"
+                id="articlesLink"
+              >
+                <a href="./articles.html" class="header__link"
+                  >Сохранённые статьи</a
+                >
+              </li>
+              <li class="header__list-item" id="loginBtn">
+                <button class="header__auth">Авторизоваться</button>
+              </li>
+              <li
+                class="header__list-item header__list-item_is-disabled"
+                id="logoutBtn"
+              >
+                <div class="header__exit">
+                  <p class="header__exit-text"></p>
+                  <img
+                    src="<%=require('../images/logout_white.png').default%>"
+                    alt="Закрыть"
+                    class="header__exit-image"
+                  />
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section class="search page__search">
+          <div class="search__container">
+            <h2 class="search__title">Что в мире творится?</h2>
+            <p class="search__subtitle">
+              Находите самые свежие статьи на любую тему и сохраняйте в своём
+              личном кабинете.
+            </p>
+            <form class="search__form" name="search">
+              <input
+                type="text"
+                name="key"
+                placeholder="Введите тему новости"
+                class="search__input"
+                required
+              />
+              <button class="search__button">Искать</button>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <main class="content">
+        <section class="circle page__circle circle_invisible">
+          <i class="circle__preloader"></i>
+          <h2 class="circle__text">Идет поиск новостей...</h2>
+        </section>
+
+        <section class="not-found page__not-found not-found_invisible">
+          <img
+            alt="Грустная лупа"
+            src="<%=require('../images/not-found_v1.svg').default%>"
+            class="not-found__image"
+          />
+          <h2 class="not-found__title">Ничего не найдено</h2>
+          <p class="not-found__subtitle">
+            К сожалению по вашему запросу ничего не найдено.
+          </p>
+        </section>
+
+        <section class="result page__result result_invisible">
+          <h2 class="result__title">Результаты поиска</h2>
+          <div class="result__list"></div>
+          <button class="result__button">Показать ещё</button>
+        </section>
+
+        <section class="about page__about">
+          <div class="about__image-container">
+            <img
+              src="<%=require('../images/myimg.jpg').default%>"
+              alt="Автор"
+              class="about__image"
+            />
+          </div>
+          <div class="about__container">
+            <h2 class="about__title">Об авторе</h2>
+            <p class="about__description">
+              Привет, меня зовут Владислав. Я начинающий фронтенд-разработчик, и
+              это мой дипломный проект.
+            </p>
+            <p class="about__description">
+              Данный сервис предназначен для поиска новостей по ключевым словам
+              и добавлением в личный кабинет.
+            </p>
+          </div>
+        </section>
+      </main>
+      <footer class="footer page__footer">
+        <p class="footer__copyright">
+          &COPY; 2020 Supersite, Powered by News API
+        </p>
+        <nav class="footer__list-container">
+          <ul class="footer__list footer__list_text">
+            <li class="footer__list-link">
+              <a href="#main" class="footer__link">Главная</a>
+            </li>
+            <li class="footer__list-link">
+              <a
+                href="https://praktikum.yandex.ru/"
+                class="footer__link"
+                target="blank"
+                >Яндекс.Практикум</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__list footer__list_icon">
+            <li class="footer__list-link">
+              <a
+                href="https://github.com/LazarevVlad"
+                class="footer__link"
+                target="blank"
+                ><img
+                  src="<%=require('../images/github.svg').default%>"
+                  alt="Ссылка на github"
+                  class="footer__link-image"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+
+      <div class="popup popup_signin">
+        <div class="popup__content">
+          <img
+            src="<%=require('../images/back.svg').default%>"
+            alt="Закрыть"
+            class="popup__close"
+          />
+          <h3 class="popup__title">Вход</h3>
+          <form class="popup__form" name="signin" novalidate>
+            <div class="popup__input-container">
+              <label class="popup__label" for="email-signin">Email</label>
+              <input
+                id="email-signin"
+                type="email"
+                name="emailSignin"
+                class="popup__input popup__input_type_email"
+                placeholder="Введите почту"
+                required
+              />
+              <span id="error-email-signin" class="error-message"></span>
+            </div>
+            <div class="popup__input-container">
+              <label class="popup__label" for="password-signin">Password</label>
+              <input
+                id="password-signin"
+                type="password"
+                name="passwordSignin"
+                class="popup__input popup__input_type_password"
+                placeholder="Введите пароль"
+                required
+              />
+              <span id="error-password-signin" class="error-message"></span>
+            </div>
+            <div class="popup__button-container">
+              <span id="submit" class="error-message"></span>
+              <button
+                type="submit"
+                class="popup__button popup__button_signin"
+                disabled
+              >
+                Войти
+              </button>
+            </div>
+            <p class="popup__option">
+              или
+              <span class="popup__option-text popup__option-text_signup"
+                >Зарегистрироваться</span
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup_signup">
+      <div class="popup__content">
+        <img
+          src="<%=require('../images/back.svg').default%>"
+          alt="Закрыть"
+          class="popup__close"
+        />
+        <h3 class="popup__title">Регистрация</h3>
+        <form class="popup__form" name="signup" novalidate>
+          <div class="popup__input-container">
+            <label class="popup__label" for="email-signup">Email</label>
+            <input
+              id="email-signup"
+              type="email"
+              name="emailSignup"
+              class="popup__input popup__input_type_email"
+              placeholder="Введите почту"
+              required
+            />
+            <span id="error-email-signup" class="error-message"></span>
+          </div>
+          <div class="popup__input-container">
+            <label class="popup__label" for="password-signup">Password</label>
+            <input
+              id="password-signup"
+              type="password"
+              name="passwordSignup"
+              class="popup__input popup__input_type_password"
+              placeholder="Введите пароль"
+              required
+            />
+            <span id="error-password-signup" class="error-message"></span>
+          </div>
+          <div class="popup__input-container">
+            <label class="popup__label" for="name">Имя</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              class="popup__input popup__input_type_name"
+              placeholder="Введите своё имя"
+              minlength="2"
+              maxlength="30"
+              required
+            />
+            <span id="error-name" class="error-message"></span>
+          </div>
+          <div class="popup__button-container">
+            <span id="submit" class="error-message"></span>
+            <button
+              type="submit"
+              class="popup__button popup__button_signup"
+              disabled
+            >
+              Зарегистрироваться
+            </button>
+          </div>
+          <p class="popup__option">
+            или
+            <span class="popup__option-text popup__option-text_signin"
+              >Войти</span
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup_result">
+      <div class="popup__content popup__content_type_result">
+        <img
+          src="<%=require('../images/back.svg').default%>"
+          alt="Закрыть"
+          class="popup__close"
+        />
+        <h3 class="popup__title popup__title_type_result">
+          Пользователь успешно зарегистрирован!
+        </h3>
+        <p class="popup__option popup__option_type_result">
+          <span class="popup__option-text popup__option-text_result"
+            >Выполнить вход</span
+          >
+        </p>
+      </div>
+    </div>
+    <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+  </body>
+</html>

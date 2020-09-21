@@ -1,0 +1,17 @@
+@import url(./_type/_articles/header__list-close_type_articles.css);
+
+.header__list-close {
+  background-image: url(../../../../../images/close_menu.svg);
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  right: 16px;
+  display: none;
+}
+
+@media all and (max-width: 767px) {
+  .header__list-close {
+    display: block;
+  }
+}

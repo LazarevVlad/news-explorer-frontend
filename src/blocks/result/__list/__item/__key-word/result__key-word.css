@@ -1,0 +1,29 @@
+.result__key-word {
+  margin: 0;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 8px 5.33%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media all and (max-width: 1023px) {
+  .result__key-word {
+    max-width: 88px;
+
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .result__key-word {
+    top: 16px;
+    right: 16px;
+  }
+}

@@ -1,0 +1,31 @@
+.header__auth {
+  width: 176px;
+  height: 48px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1023px) {
+  .header__auth {
+    width: 152px;
+    height: 40px;
+  }
+}
+@media all and (max-width: 321px) {
+  .header__auth {
+    width: 288px;
+    height: 56px;
+  }
+}
+
+@media all and (max-width: 305px) {
+  .header__auth {
+    width: 260px;
+  }
+}

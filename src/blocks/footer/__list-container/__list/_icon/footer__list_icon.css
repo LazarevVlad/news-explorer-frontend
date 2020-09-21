@@ -1,0 +1,10 @@
+.footer__list.footer__list_icon {
+  flex-basis: 40px;
+  text-align: right;
+}
+
+@media all and (max-width: 319px) {
+  .footer__list.footer__list_icon {
+    flex-basis: 0;
+  }
+}

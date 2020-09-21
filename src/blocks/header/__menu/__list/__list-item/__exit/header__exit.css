@@ -1,0 +1,35 @@
+@import url(./_type/_articles/header__exit_type_articles.css);
+
+.header__exit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 48px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  padding: 0 19px;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1023px) {
+  .header__exit {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+@media all and (max-width: 321px) {
+  .header__exit {
+    width: 288px;
+    height: 56px;
+  }
+}
+@media all and (max-width: 305px) {
+  .header__exit {
+    width: 260px;
+  }
+}

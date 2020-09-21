@@ -1,0 +1,33 @@
+@import url(./__list/footer__list.css);
+
+.footer__list-container {
+  margin: 0;
+  padding: 0;
+  flex-basis: 400px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media all and (max-width: 1023px) {
+  .footer__list-container {
+    flex-basis: 288px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .footer__list-container {
+    max-width: 288px;
+    /* margin: 0 auto; */
+    flex-basis: 0;
+    order: 1;
+  }
+}
+
+@media all and (max-width: 319px) {
+  .footer__list-container {
+    max-width: 280px;
+  }
+}

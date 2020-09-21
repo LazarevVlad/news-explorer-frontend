@@ -1,0 +1,33 @@
+@import url(./page/page__header.css);
+@import url(./__menu/header__menu.css);
+@import url(./_type/_articles/header_type_articles.css);
+@import url(./__logo/header__logo.css);
+@import url(./__menu-logo/header__menu-logo.css);
+/* @import url(./__menu-mobile/header__menu-mobile.css); */
+
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+  border-bottom: rgba(196, 196, 196, 0.01);
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  font-family: 'Roboto', 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media all and (max-width: 1023px) {
+  .header {
+    height: 66px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .header {
+    height: 56px;
+  }
+}

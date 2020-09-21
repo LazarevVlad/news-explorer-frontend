@@ -1,0 +1,14 @@
+@import url(./_type/_articles/header__link_type_articles.css);
+
+.header__link {
+  color: currentColor;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__link:hover {
+  border-bottom: 1px solid #ffffff;
+}

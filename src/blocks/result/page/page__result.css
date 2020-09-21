@@ -1,0 +1,16 @@
+.page__result {
+  box-sizing: border-box;
+  padding: 80px 104px;
+}
+
+@media all and (max-width: 1023px) {
+  .page__result {
+    padding: 40px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .page__result {
+    padding: 32px 16px;
+  }
+}
