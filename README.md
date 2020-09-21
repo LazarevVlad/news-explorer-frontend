@@ -1,9 +1,11 @@
 # Фронтенд для News explorer
 
-## IP-адрес сервера и домен
+Это сервис, в котором можно найти новости по запросу и сохранить в личном кабине
+
+## Ссылки на проект
 
 - https://findnews.gq
-- 130.193.59.170
+- https://lazarevvlad.github.io/news-explorer-frontend/
 
 ## Используемые технологии
 
@@ -12,8 +14,16 @@
 - JS
 - Git
 - Webpack
+- Babel
+- ESLint
 
-## Сборка
+## Установка
 
-- npm run dev - для разработки;
-- npm run start - создает сборку в папке dist;
+- Склонируте репозиторий:  
+  `git clone https://github.com/LazarevVlad/news-explorer-frontend.git`
+- Установите зависимости:  
+  `npm install`
+- Для разработки:  
+  `npm run dev`
+- Для создания сборки в папке dist:  
+  `npm run start`
